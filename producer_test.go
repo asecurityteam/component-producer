@@ -49,7 +49,7 @@ func TestProducer(t *testing.T) {
 			},
 		},
 	})
-	p, err := NewProducer(context.Background(), src)
+	p, err := New(context.Background(), src)
 	require.Nil(t, err)
 	require.NotNil(t, p)
 
@@ -61,7 +61,7 @@ func TestProducer(t *testing.T) {
 			},
 		},
 	})
-	p, err = NewProducer(context.Background(), src)
+	p, err = New(context.Background(), src)
 	require.Nil(t, err)
 	require.NotNil(t, p)
 
@@ -70,6 +70,6 @@ func TestProducer(t *testing.T) {
 			"type": "MISSING",
 		},
 	})
-	_, err = NewProducer(context.Background(), src)
+	_, err = New(context.Background(), src)
 	require.NotNil(t, err)
 }
