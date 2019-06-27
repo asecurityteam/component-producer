@@ -13,6 +13,8 @@ const (
 	TypeBenthos = "BENTHOS"
 	// TypePOST is used to select an HTTP POST client.
 	TypePOST = "POST"
+	// TypeNull is used to disable event production.
+	TypeNull = "NULL"
 )
 
 // Config wraps all producer related configuration.
@@ -20,6 +22,7 @@ type Config struct {
 	Type    string `default:"The type of producer. The choices are BENTHOS and POST."`
 	Benthos *BenthosConfig
 	POST    *POSTConfig
+	Null    *NullConfig
 }
 
 // Name of the configuration.
@@ -31,6 +34,7 @@ func (*Config) Name() string {
 type Component struct {
 	Benthos *BenthosComponent
 	POST    *POSTComponent
+	Null    *NullComponent
 }
 
 // NewComponent populates a ProducerComponent with defaults.
@@ -38,6 +42,7 @@ func NewComponent() *Component {
 	return &Component{
 		Benthos: NewBenthosComponent(),
 		POST:    NewPOSTComponent(),
+		Null:    NewNullComponent(),
 	}
 }
 
@@ -47,6 +52,7 @@ func (c *Component) Settings() *Config {
 		Type:    "BENTHOS",
 		Benthos: c.Benthos.Settings(),
 		POST:    c.POST.Settings(),
+		Null:    c.Null.Settings(),
 	}
 }
 
@@ -57,6 +63,8 @@ func (c *Component) New(ctx context.Context, conf *Config) (Producer, error) {
 		return c.Benthos.New(ctx, conf.Benthos)
 	case strings.EqualFold(conf.Type, TypePOST):
 		return c.POST.New(ctx, conf.POST)
+	case strings.EqualFold(conf.Type, TypeNull):
+		return c.Null.New(ctx, conf.Null)
 	default:
 		return nil, fmt.Errorf("unknown producer type %s", conf.Type)
 	}
