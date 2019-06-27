@@ -67,6 +67,15 @@ func TestProducer(t *testing.T) {
 
 	src = settings.NewMapSource(map[string]interface{}{
 		"producer": map[string]interface{}{
+			"type": "null",
+		},
+	})
+	p, err = New(context.Background(), src)
+	require.Nil(t, err)
+	require.NotNil(t, p)
+
+	src = settings.NewMapSource(map[string]interface{}{
+		"producer": map[string]interface{}{
 			"type": "MISSING",
 		},
 	})
