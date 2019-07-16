@@ -35,7 +35,7 @@
   version = "v1.4.0"
 
 [[projects]]
-  digest = "1:87646314d6059ab5f937694b7e9e79fa6048b5a3708881a92f4128b91f1037fa"
+  digest = "1:ad0f981d8fba00ca6a5642468213eb31742f510e1ecc9cdb28dcd7c7593fde6b"
   name = "github.com/Jeffail/benthos"
   packages = [
     "lib/api",
@@ -70,7 +70,6 @@
     "lib/util/aws/session",
     "lib/util/config",
     "lib/util/disk",
-    "lib/util/http",
     "lib/util/http/auth",
     "lib/util/http/client",
     "lib/util/retries",
@@ -79,16 +78,16 @@
     "lib/util/tls",
   ]
   pruneopts = "UT"
-  revision = "6d8681ee006de345ba57f5f265bd16950794a96e"
-  version = "v2.7.0"
+  revision = "7d8cf2585d7fc68a1a19b097f7503bea1dac1c71"
+  version = "v2.4.0"
 
 [[projects]]
-  digest = "1:06f9276c40d85647a9227cbf935f81b763171ca4f60c623ec172d40bce0613fa"
+  digest = "1:d1cd92da0f5158106ae06db669d28c8b0bd22edce5924f388d33e0b7d6651239"
   name = "github.com/Jeffail/gabs"
   packages = ["."]
   pruneopts = "UT"
-  revision = "636cf72d5e3c0ebad157af7c694469e7d89cec0f"
-  version = "v1.4.0"
+  revision = "9347f8da1f8c507f8e30a65df221d75be26b6b9f"
+  version = "v1.3.1"
 
 [[projects]]
   digest = "1:f9ae348e1f793dcf9ed930ed47136a67343dbd6809c5c91391322267f4476892"
