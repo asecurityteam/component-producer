@@ -14,7 +14,11 @@
 
 [[constraint]]
   name = "github.com/Jeffail/benthos"
-  version = "^2.4.0"
+  version = "~2.4.0"
+
+[[override]]
+  name = "github.com/Jeffail/gabs"
+  version = "~1.3.0"
 
 [[constraint]]
   name = "github.com/stretchr/testify"
