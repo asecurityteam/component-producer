@@ -32,7 +32,7 @@ func (p *postProducer) Produce(ctx context.Context, event interface{}) (interfac
 	// Drain the body no matter what in order to allow for connection re-use
 	// in HTTP/1.x systems.
 	rb, _ := ioutil.ReadAll(res.Body)
-	if res.StatusCode < 200 || res.StatusCode > 200 {
+	if res.StatusCode < 200 || res.StatusCode >= 300 {
 		return nil, fmt.Errorf("failed to post. status(%d) reason(%s)", res.StatusCode, string(rb))
 	}
 	return event, nil
