@@ -3,6 +3,7 @@ package producer
 import (
 	"context"
 	"errors"
+	"fmt"
 	"net/http"
 	"net/url"
 	"testing"
@@ -117,6 +118,50 @@ func TestPostProducerSuccess(t *testing.T) {
 	}, nil)
 	_, err := p.Produce(context.Background(), event)
 	require.Nil(t, err)
+}
+
+func TestPostProducerStatus(t *testing.T) {
+	ctrl := gomock.NewController(t)
+	defer ctrl.Finish()
+
+	tr := NewMockRoundTripper(ctrl)
+	u, _ := url.Parse("http://localhost")
+	event := make(map[string]interface{})
+
+	p := &postProducer{
+		Client:   &http.Client{Transport: tr},
+		Endpoint: u,
+	}
+
+	var statuses = make([]struct {
+		code    int
+		wantErr bool
+	}, 0, 500)
+	for x := 100; x < 600; x = x + 1 {
+		statuses = append(statuses, struct {
+			code    int
+			wantErr bool
+		}{
+			code:    x,
+			wantErr: x < 200 || x >= 300,
+		})
+	}
+
+	for _, status := range statuses {
+		finalAssert := require.Nil
+		if status.wantErr {
+			finalAssert = require.NotNil
+
+		}
+		t.Run(fmt.Sprintf("%d", status.code), func(t *testing.T) {
+			tr.EXPECT().RoundTrip(gomock.Any()).Return(&http.Response{
+				StatusCode: status.code,
+				Body:       http.NoBody,
+			}, nil)
+			_, err := p.Produce(context.Background(), event)
+			finalAssert(t, err)
+		})
+	}
 }
 
 func TestProducerPOSTComponent_New(t *testing.T) {
