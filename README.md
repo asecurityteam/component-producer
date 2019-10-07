@@ -1,6 +1,6 @@
 <a id="markdown-component-producer---settings-component-for-publishing-events-to-streams" name="component-producer---settings-component-for-publishing-events-to-streams"></a>
 # component-producer - Settings component for publishing events to streams
-
+[![GoDoc](https://godoc.org/github.com/asecurityteam/component-producer?status.svg)](https://godoc.org/github.com/asecurityteam/component-producer)
 <!-- TOC -->
 
 - [component-producer - Settings component for publishing events to streams](#component-producer---settings-component-for-publishing-events-to-streams)
