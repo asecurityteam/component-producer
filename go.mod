@@ -18,7 +18,7 @@ require (
 	github.com/asecurityteam/httpstats v0.0.0-20190225132931-c2085dfd2a77 // indirect
 	github.com/asecurityteam/logevent v0.0.0-20190225122144-b32737d8d51c // indirect
 	github.com/asecurityteam/runhttp v0.2.0 // indirect
-	github.com/asecurityteam/settings v0.1.0
+	github.com/asecurityteam/settings v0.4.0
 	github.com/asecurityteam/transport v0.0.0-20190225122138-b848ebf618ee // indirect
 	github.com/asecurityteam/transportd v0.3.2 // indirect
 	github.com/aws/aws-sdk-go v1.20.20 // indirect
@@ -29,7 +29,6 @@ require (
 	github.com/eclipse/paho.mqtt.golang v1.2.0 // indirect
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/getkin/kin-openapi v0.0.0-20190704062909-6b4f9330c465 // indirect
-	github.com/go-yaml/yaml v2.1.0+incompatible // indirect
 	github.com/golang/mock v1.3.1
 	github.com/google/uuid v1.1.1 // indirect
 	github.com/gorilla/mux v1.7.3 // indirect
