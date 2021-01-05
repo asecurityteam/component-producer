@@ -29,7 +29,7 @@ require (
 	github.com/eclipse/paho.mqtt.golang v1.2.0 // indirect
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/getkin/kin-openapi v0.0.0-20190704062909-6b4f9330c465 // indirect
-	github.com/golang/mock v1.3.1
+	github.com/golang/mock v1.4.4
 	github.com/google/uuid v1.1.1 // indirect
 	github.com/gorilla/mux v1.7.3 // indirect
 	github.com/jcmturner/gofork v1.0.0 // indirect
