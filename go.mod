@@ -6,7 +6,7 @@ require (
 	bitbucket.org/atlassian/go-asap v0.0.0-20190528201952-3e884c030d60 // indirect
 	cloud.google.com/go v0.41.0 // indirect
 	github.com/DataDog/zstd v1.4.0 // indirect
-	github.com/Jeffail/benthos v0.0.0-20190606213305-7d8cf2585d7f
+	github.com/Jeffail/benthos/v3/v3 v3.37.0
 	github.com/OneOfOne/xxhash v1.2.5 // indirect
 	github.com/Shopify/sarama v1.23.0 // indirect
 	github.com/asecurityteam/component-connstate v0.1.0 // indirect
