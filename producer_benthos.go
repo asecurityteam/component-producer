@@ -3,9 +3,9 @@ package producer
 import (
 	"context"
 
-	"github.com/Jeffail/benthos/lib/config"
-	"github.com/Jeffail/benthos/lib/serverless"
-	"github.com/Jeffail/benthos/lib/util/text"
+	"github.com/Jeffail/benthos/v3/lib/config"
+	"github.com/Jeffail/benthos/v3/lib/serverless"
+	"github.com/Jeffail/benthos/v3/lib/util/text"
 	"gopkg.in/yaml.v2"
 )
 
