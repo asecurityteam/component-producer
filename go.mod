@@ -26,7 +26,7 @@ require (
 	github.com/rs/xhandler v0.0.0-20151224012956-d9d9599b6aaf // indirect
 	github.com/rs/xstats v0.0.0-20170813190920-c67367528e16 // indirect
 	github.com/rs/zerolog v1.14.3 // indirect
-	github.com/stretchr/testify v1.6.1
+	github.com/stretchr/testify v1.7.0
 	gopkg.in/yaml.v2 v2.4.0
 )
 
