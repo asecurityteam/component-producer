@@ -11,7 +11,7 @@ require (
 	github.com/Azure/go-autorest/autorest v0.11.17 // indirect
 	github.com/Azure/go-autorest/autorest/adal v0.9.10 // indirect
 	github.com/HdrHistogram/hdrhistogram-go v1.0.1 // indirect
-	github.com/Jeffail/benthos/v3 v3.38.0
+	github.com/Jeffail/benthos/v3 v3.41.1
 	github.com/Microsoft/go-winio v0.4.16 // indirect
 	github.com/armon/go-metrics v0.3.6 // indirect
 	github.com/asecurityteam/component-httpclient v0.2.0
