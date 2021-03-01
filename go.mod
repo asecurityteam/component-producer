@@ -33,7 +33,7 @@ require (
 	github.com/go-openapi/swag v0.19.13 // indirect
 	github.com/gocql/gocql v0.0.0-20210126081024-994808f8e61e // indirect
 	github.com/gofrs/uuid v4.0.0+incompatible // indirect
-	github.com/golang/mock v1.4.4
+	github.com/golang/mock v1.5.0
 	github.com/google/uuid v1.2.0 // indirect
 	github.com/hashicorp/go-hclog v0.15.0 // indirect
 	github.com/itchyny/gojq v0.12.1 // indirect
