@@ -5,7 +5,6 @@ go 1.15
 require (
 	bitbucket.org/atlassian/go-asap v0.0.0-20201116174856-38f0143fcabd // indirect
 	cloud.google.com/go v0.75.0 // indirect
-	cloud.google.com/go/pubsub v1.9.1 // indirect
 	github.com/Azure/azure-pipeline-go v0.2.3 // indirect
 	github.com/Azure/azure-sdk-for-go v50.2.0+incompatible // indirect
 	github.com/Azure/go-autorest/autorest v0.11.17 // indirect
@@ -26,7 +25,6 @@ require (
 	github.com/bitly/go-hostpool v0.1.0 // indirect
 	github.com/containerd/continuity v0.0.0-20201208142359-180525291bb7 // indirect
 	github.com/dgryski/go-farm v0.0.0-20200201041132-a6ae2369ad13 // indirect
-	github.com/eclipse/paho.mqtt.golang v1.3.1 // indirect
 	github.com/frankban/quicktest v1.11.3 // indirect
 	github.com/getkin/kin-openapi v0.36.0 // indirect
 	github.com/go-chi/chi v4.1.2+incompatible // indirect
@@ -38,17 +36,14 @@ require (
 	github.com/hashicorp/go-hclog v0.15.0 // indirect
 	github.com/itchyny/gojq v0.12.1 // indirect
 	github.com/jhump/protoreflect v1.8.1 // indirect
-	github.com/klauspost/compress v1.11.7 // indirect
 	github.com/linkedin/goavro/v2 v2.10.0 // indirect
 	github.com/moby/term v0.0.0-20201216013528-df9cb8a40635 // indirect
-	github.com/nats-io/jwt v1.2.2 // indirect
 	github.com/nats-io/nats-streaming-server v0.20.0 // indirect
 	github.com/nats-io/stan.go v0.8.2 // indirect
 	github.com/nxadm/tail v1.4.6 // indirect
 	github.com/olivere/elastic/v7 v7.0.22 // indirect
 	github.com/onsi/ginkgo v1.14.2 // indirect
 	github.com/onsi/gomega v1.10.4 // indirect
-	github.com/ory/dockertest/v3 v3.6.3 // indirect
 	github.com/pebbe/zmq4 v1.2.2 // indirect
 	github.com/prometheus/client_golang v1.9.0 // indirect
 	github.com/prometheus/procfs v0.3.0 // indirect
@@ -59,13 +54,10 @@ require (
 	github.com/stretchr/objx v0.3.0 // indirect
 	github.com/stretchr/testify v1.7.0
 	github.com/vincent-petithory/dataurl v0.0.0-20191104211930-d1553a71de50 // indirect
-	golang.org/x/crypto v0.0.0-20201221181555-eec23a3978ad // indirect
 	golang.org/x/mod v0.4.1 // indirect
-	golang.org/x/net v0.0.0-20210119194325-5f4716e94777 // indirect
 	golang.org/x/oauth2 v0.0.0-20210125201302-af13f521f196 // indirect
 	golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c // indirect
 	golang.org/x/text v0.3.5 // indirect
-	golang.org/x/tools v0.1.0 // indirect
 	google.golang.org/api v0.37.0 // indirect
 	google.golang.org/genproto v0.0.0-20210126160654-44e461bb6506 // indirect
 	google.golang.org/grpc v1.35.0 // indirect
@@ -75,3 +67,6 @@ require (
 )
 
 replace github.com/uber/jaeger-lib v1.5.0+incompatible => github.com/uber/jaeger-lib v1.5.0
+
+// Force version due to a vulnerbility in the versions benthos currently uses
+replace github.com/nats-io/nats-server/v2 => github.com/nats-io/nats-server/v2 v2.2.0
