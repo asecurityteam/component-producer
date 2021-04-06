@@ -17,7 +17,7 @@ const (
 
 // Config wraps all producer related configuration.
 type Config struct {
-	Type string `default:"The type of producer. The choices are BENTHOS and POST."`
+	Type string `default:"The type of producer. The choices are POST and NULL."`
 	POST *POSTConfig
 	Null *NullConfig
 }
@@ -44,7 +44,7 @@ func NewComponent() *Component {
 // Settings generates a default configuration.
 func (c *Component) Settings() *Config {
 	return &Config{
-		Type: "BENTHOS",
+		Type: "POST",
 		POST: c.POST.Settings(),
 		Null: c.Null.Settings(),
 	}

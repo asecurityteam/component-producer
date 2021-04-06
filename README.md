@@ -20,9 +20,8 @@
 ## Overview
 
 This is a [`settings`](https://github.com/asecurityteam/settings) that enables
-constructing a an event producer. The resulting client may be either an HTTP
-client provided by
-[`component-httpclient`](https://github.com/asecurityteam/component-httpclient).
+constructing an event producer. Currently, the only supported client is HTTP, as provided by
+ [`component-httpclient`](https://github.com/asecurityteam/component-httpclient).
 
 **[`Benthos`] (https://github.com/Jeffail/benthos) producer is no longer supported as of version 2 of the component. **
 
