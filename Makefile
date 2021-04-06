@@ -13,7 +13,7 @@ lint:
         -w "$(DIR)" \
         asecurityteam/sdcli:v1 go lint
 
-test:
+test: dep
 	docker run -ti \
         --mount src="$(DIR)",target="$(DIR)",type="bind" \
         -w "$(DIR)" \
