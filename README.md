@@ -22,13 +22,15 @@
 This is a [`settings`](https://github.com/asecurityteam/settings) that enables
 constructing a an event producer. The resulting client may be either an HTTP
 client provided by
-[`component-httpclient`](https://github.com/asecurityteam/component-httpclient)
-or [`benthos`](https://github.com/Jeffail/benthos). We use this, for example,
+[`component-httpclient`](https://github.com/asecurityteam/component-httpclient).
+
+**[`Benthos`] (https://github.com/Jeffail/benthos) producer is no longer supported as of version 2 of the component. **
+
+ We use this, for example,
 to enable migration to and from servers and serverless deployment models for our
 event stream producers. When running on servers we run `benthos` as part of a
 pod or docker compose and use the HTTP option to send events from our app to the
-`benthos` process. When running in serverless we statically bind the `benthos`
-functionality to the app by using the `benthos` option.
+`benthos` process. 
 
 <a id="markdown-quick-start" name="quick-start"></a>
 ## Quick Start
