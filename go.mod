@@ -1,4 +1,4 @@
-module github.com/asecurityteam/component-producer
+module github.com/asecurityteam/component-producer/v2
 
 go 1.15
 
