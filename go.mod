@@ -1,18 +1,15 @@
 module github.com/asecurityteam/component-producer/v2
 
-go 1.15
+go 1.16
 
 require (
 	bitbucket.org/atlassian/go-asap v0.0.0-20201116174856-38f0143fcabd // indirect
 	github.com/asecurityteam/component-httpclient v0.2.0
 	github.com/asecurityteam/component-stat v0.3.0 // indirect
 	github.com/asecurityteam/httpstats v0.0.0-20201215174437-106328c66daa // indirect
-	github.com/asecurityteam/logevent v1.4.0 // indirect
 	github.com/asecurityteam/runhttp v0.4.0 // indirect
 	github.com/asecurityteam/settings v0.4.0
-	github.com/asecurityteam/transport v1.5.1 // indirect
-	github.com/asecurityteam/transportd v1.2.4 // indirect
-	github.com/getkin/kin-openapi v0.36.0 // indirect
+	github.com/asecurityteam/transportd v1.5.0 // indirect
 	github.com/go-chi/chi v4.1.2+incompatible // indirect
 	github.com/go-openapi/swag v0.19.13 // indirect
 	github.com/golang/mock v1.5.0
