@@ -52,12 +52,10 @@ require (
 	github.com/smira/go-statsd v1.3.2 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/stretchr/objx v0.3.0 // indirect
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.7.1
 	github.com/vincent-petithory/dataurl v0.0.0-20191104211930-d1553a71de50 // indirect
 	golang.org/x/mod v0.4.1 // indirect
 	golang.org/x/oauth2 v0.0.0-20210125201302-af13f521f196 // indirect
-	golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c // indirect
-	golang.org/x/text v0.3.5 // indirect
 	google.golang.org/api v0.37.0 // indirect
 	google.golang.org/genproto v0.0.0-20210126160654-44e461bb6506 // indirect
 	google.golang.org/grpc v1.35.0 // indirect
@@ -69,4 +67,4 @@ require (
 replace github.com/uber/jaeger-lib v1.5.0+incompatible => github.com/uber/jaeger-lib v1.5.0
 
 // Force version due to a vulnerbility in the versions benthos currently uses
-replace github.com/nats-io/nats-server/v2 => github.com/nats-io/nats-server/v2 v2.2.0
+replace github.com/nats-io/nats-server/v2 => github.com/nats-io/nats-server/v2 v2.9.1
