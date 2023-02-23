@@ -54,10 +54,8 @@ require (
 	github.com/stretchr/objx v0.3.0 // indirect
 	github.com/stretchr/testify v1.7.0
 	github.com/vincent-petithory/dataurl v0.0.0-20191104211930-d1553a71de50 // indirect
-	golang.org/x/mod v0.4.1 // indirect
 	golang.org/x/oauth2 v0.0.0-20210125201302-af13f521f196 // indirect
-	golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c // indirect
-	golang.org/x/text v0.3.5 // indirect
+	golang.org/x/text v0.3.8 // indirect
 	google.golang.org/api v0.37.0 // indirect
 	google.golang.org/genproto v0.0.0-20210126160654-44e461bb6506 // indirect
 	google.golang.org/grpc v1.35.0 // indirect
