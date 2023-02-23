@@ -67,4 +67,4 @@ require (
 replace github.com/uber/jaeger-lib v1.5.0+incompatible => github.com/uber/jaeger-lib v1.5.0
 
 // Force version due to a vulnerbility in the versions benthos currently uses
-replace github.com/nats-io/nats-server/v2 => github.com/nats-io/nats-server/v2 v2.2.0
+replace github.com/nats-io/nats-server/v2 => github.com/nats-io/nats-server/v2 v2.7.4
