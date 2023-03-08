@@ -51,8 +51,7 @@ require (
 	github.com/rs/zerolog v1.20.0 // indirect
 	github.com/smira/go-statsd v1.3.2 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
-	github.com/stretchr/objx v0.3.0 // indirect
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.8.2
 	github.com/vincent-petithory/dataurl v0.0.0-20191104211930-d1553a71de50 // indirect
 	golang.org/x/oauth2 v0.0.0-20210125201302-af13f521f196 // indirect
 	golang.org/x/text v0.3.8 // indirect
