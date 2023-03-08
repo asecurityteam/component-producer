@@ -176,6 +176,8 @@ github.com/asecurityteam/runhttp v0.4.0/go.mod h1:dxiW787QEACjoGlcgcbzGO90IY//Ps
 github.com/asecurityteam/settings v0.1.0/go.mod h1:Wb6bajm1AgHtjLP8ecv7RqUTCX1hvrIhgX4sF3Ras8c=
 github.com/asecurityteam/settings v0.4.0 h1:L7fK4WqkvnvglBrfLBgp77LUDR2cxfSNWGFex7lrMK0=
 github.com/asecurityteam/settings v0.4.0/go.mod h1:frhlF5kT7WvdiRX3eQlCOjSppbYUfxxjM9xKTvYjcGo=
+github.com/asecurityteam/settings v0.7.0 h1:HsTjBjrWjj1FslfVhgQ9JYOTvA/8Xi6fpA3haw7yLIE=
+github.com/asecurityteam/settings v0.7.0/go.mod h1:NPYY/raUkF0tDC1az7IpEu7KUt//RFPDUnyZ3QTpmvs=
 github.com/asecurityteam/transport v0.0.0-20190225122138-b848ebf618ee/go.mod h1:0OVTikRn0uMRQsFsslN4ozUaD5YaRPUpqHTBzTsOtaM=
 github.com/asecurityteam/transport v1.4.0/go.mod h1:0xMNyMZ8UYoW7VK+kP4xCIK/pwPBQCjTMcP+PqQIFBo=
 github.com/asecurityteam/transport v1.5.1 h1:4rH99bX+rniggAJEpRrpiByHTLYHFYQvJFSKs9be8S4=

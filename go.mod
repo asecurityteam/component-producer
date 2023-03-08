@@ -18,7 +18,7 @@ require (
 	github.com/asecurityteam/httpstats v0.0.0-20201215174437-106328c66daa // indirect
 	github.com/asecurityteam/logevent v1.4.0 // indirect
 	github.com/asecurityteam/runhttp v0.4.0 // indirect
-	github.com/asecurityteam/settings v0.4.0
+	github.com/asecurityteam/settings v0.7.0
 	github.com/asecurityteam/transport v1.5.1 // indirect
 	github.com/asecurityteam/transportd v1.2.4 // indirect
 	github.com/aws/aws-sdk-go v1.36.31 // indirect
