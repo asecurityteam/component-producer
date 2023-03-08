@@ -6,7 +6,7 @@ import (
 	"github.com/Jeffail/benthos/v3/lib/config"
 	"github.com/Jeffail/benthos/v3/lib/serverless"
 	"github.com/Jeffail/benthos/v3/lib/util/text"
-	"gopkg.in/yaml.v2"
+	"gopkg.in/yaml.v3"
 )
 
 type benthosProducer struct {
