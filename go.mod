@@ -13,26 +13,26 @@ require (
 	github.com/Jeffail/benthos/v3 v3.42.1
 	github.com/Microsoft/go-winio v0.4.16 // indirect
 	github.com/armon/go-metrics v0.3.6 // indirect
-	github.com/asecurityteam/component-httpclient v0.2.0
+	github.com/asecurityteam/component-httpclient v0.5.0
 	github.com/asecurityteam/component-stat v0.3.0 // indirect
 	github.com/asecurityteam/httpstats v0.0.0-20201215174437-106328c66daa // indirect
-	github.com/asecurityteam/logevent v1.4.0 // indirect
-	github.com/asecurityteam/runhttp v0.4.0 // indirect
-	github.com/asecurityteam/settings v0.4.0
-	github.com/asecurityteam/transport v1.5.1 // indirect
-	github.com/asecurityteam/transportd v1.2.4 // indirect
+	github.com/asecurityteam/settings v0.7.0
 	github.com/aws/aws-sdk-go v1.36.31 // indirect
 	github.com/bitly/go-hostpool v0.1.0 // indirect
 	github.com/containerd/continuity v0.0.0-20201208142359-180525291bb7 // indirect
 	github.com/dgryski/go-farm v0.0.0-20200201041132-a6ae2369ad13 // indirect
 	github.com/frankban/quicktest v1.11.3 // indirect
-	github.com/getkin/kin-openapi v0.36.0 // indirect
 	github.com/go-chi/chi v4.1.2+incompatible // indirect
 	github.com/go-openapi/swag v0.19.13 // indirect
+	github.com/gobuffalo/buffalo-plugins v1.13.0 // indirect
+	github.com/gobuffalo/gogen v0.0.0-20190224213239-1c6076128bbc // indirect
+	github.com/gobuffalo/logger v0.0.0-20190224201004-be78ebfea0fa // indirect
+	github.com/gobuffalo/meta v0.0.0-20190207205153-50a99e08b8cf // indirect
+	github.com/gobuffalo/packd v0.0.0-20190224160250-d04dd98aca5b // indirect
+	github.com/gobuffalo/syncx v0.0.0-20190224160051-33c29581e754 // indirect
 	github.com/gocql/gocql v0.0.0-20210126081024-994808f8e61e // indirect
 	github.com/gofrs/uuid v4.0.0+incompatible // indirect
-	github.com/golang/mock v1.5.0
-	github.com/google/uuid v1.2.0 // indirect
+	github.com/golang/mock v1.6.0
 	github.com/hashicorp/go-hclog v0.15.0 // indirect
 	github.com/itchyny/gojq v0.12.1 // indirect
 	github.com/jhump/protoreflect v1.8.1 // indirect
