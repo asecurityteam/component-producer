@@ -19,6 +19,8 @@
 <a id="markdown-overview" name="overview"></a>
 ## Overview
 
+**Deprecation Notice:** This package will be archived and made read-only on January 30th, 2024. After January 30th this repo will cease to be maintained on Github.
+
 This is a [`settings`](https://github.com/asecurityteam/settings) that enables
 constructing a an event producer. The resulting client may be either an HTTP
 client provided by
