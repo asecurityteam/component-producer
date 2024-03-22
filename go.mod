@@ -45,8 +45,7 @@ require (
 	github.com/onsi/ginkgo v1.14.2 // indirect
 	github.com/onsi/gomega v1.10.4 // indirect
 	github.com/pebbe/zmq4 v1.2.2 // indirect
-	github.com/prometheus/client_golang v1.9.0 // indirect
-	github.com/prometheus/procfs v0.3.0 // indirect
+	github.com/prometheus/client_golang v1.11.1 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
 	github.com/rs/zerolog v1.20.0 // indirect
 	github.com/smira/go-statsd v1.3.2 // indirect
