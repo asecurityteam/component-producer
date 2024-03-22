@@ -33,20 +33,17 @@ require (
 	github.com/gofrs/uuid v4.0.0+incompatible // indirect
 	github.com/golang/mock v1.5.0
 	github.com/google/uuid v1.2.0 // indirect
-	github.com/hashicorp/go-hclog v0.15.0 // indirect
 	github.com/itchyny/gojq v0.12.1 // indirect
 	github.com/jhump/protoreflect v1.8.1 // indirect
 	github.com/linkedin/goavro/v2 v2.10.0 // indirect
 	github.com/moby/term v0.0.0-20201216013528-df9cb8a40635 // indirect
-	github.com/nats-io/nats-streaming-server v0.20.0 // indirect
-	github.com/nats-io/stan.go v0.8.2 // indirect
+	github.com/nats-io/nats-streaming-server v0.24.3 // indirect
 	github.com/nxadm/tail v1.4.6 // indirect
 	github.com/olivere/elastic/v7 v7.0.22 // indirect
 	github.com/onsi/ginkgo v1.14.2 // indirect
 	github.com/onsi/gomega v1.10.4 // indirect
 	github.com/pebbe/zmq4 v1.2.2 // indirect
 	github.com/prometheus/client_golang v1.9.0 // indirect
-	github.com/prometheus/procfs v0.3.0 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
 	github.com/rs/zerolog v1.20.0 // indirect
 	github.com/smira/go-statsd v1.3.2 // indirect
