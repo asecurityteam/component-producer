@@ -10,15 +10,15 @@ require (
 	github.com/Azure/go-autorest/autorest v0.11.17 // indirect
 	github.com/Azure/go-autorest/autorest/adal v0.9.10 // indirect
 	github.com/HdrHistogram/hdrhistogram-go v1.0.1 // indirect
-	github.com/Jeffail/benthos/v3 v3.42.1
+	github.com/Jeffail/benthos/v4 v4.26.0
 	github.com/Microsoft/go-winio v0.4.16 // indirect
 	github.com/armon/go-metrics v0.3.6 // indirect
-	github.com/asecurityteam/component-httpclient v0.2.0
+	github.com/asecurityteam/component-httpclient v0.6.0
 	github.com/asecurityteam/component-stat v0.3.0 // indirect
 	github.com/asecurityteam/httpstats v0.0.0-20201215174437-106328c66daa // indirect
 	github.com/asecurityteam/logevent v1.4.0 // indirect
 	github.com/asecurityteam/runhttp v0.4.0 // indirect
-	github.com/asecurityteam/settings v0.4.0
+	github.com/asecurityteam/settings v1.0.0
 	github.com/asecurityteam/transport v1.5.1 // indirect
 	github.com/asecurityteam/transportd v1.2.4 // indirect
 	github.com/aws/aws-sdk-go v1.36.31 // indirect
@@ -31,7 +31,7 @@ require (
 	github.com/go-openapi/swag v0.19.13 // indirect
 	github.com/gocql/gocql v0.0.0-20210126081024-994808f8e61e // indirect
 	github.com/gofrs/uuid v4.0.0+incompatible // indirect
-	github.com/golang/mock v1.5.0
+	github.com/golang/mock v1.6.0
 	github.com/google/uuid v1.2.0 // indirect
 	github.com/hashicorp/go-hclog v0.15.0 // indirect
 	github.com/itchyny/gojq v0.12.1 // indirect
@@ -52,7 +52,7 @@ require (
 	github.com/smira/go-statsd v1.3.2 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/stretchr/objx v0.3.0 // indirect
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.9.0
 	github.com/vincent-petithory/dataurl v0.0.0-20191104211930-d1553a71de50 // indirect
 	golang.org/x/oauth2 v0.0.0-20210125201302-af13f521f196 // indirect
 	golang.org/x/text v0.3.8 // indirect
@@ -67,4 +67,4 @@ require (
 replace github.com/uber/jaeger-lib v1.5.0+incompatible => github.com/uber/jaeger-lib v1.5.0
 
 // Force version due to a vulnerbility in the versions benthos currently uses
-replace github.com/nats-io/nats-server/v2 => github.com/nats-io/nats-server/v2 v2.7.4
+replace github.com/nats-io/nats-server/v2 => github.com/nats-io/nats-server/v2 v2.10.12
