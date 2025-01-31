@@ -1,6 +1,20 @@
 <a id="markdown-component-producer---settings-component-for-publishing-events-to-streams" name="component-producer---settings-component-for-publishing-events-to-streams"></a>
 # component-producer - Settings component for publishing events to streams
 [![GoDoc](https://godoc.org/github.com/asecurityteam/component-producer?status.svg)](https://godoc.org/github.com/asecurityteam/component-producer)
+
+
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=asecurityteam_component-producer&metric=bugs)](https://sonarcloud.io/dashboard?id=asecurityteam_component-producer)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=asecurityteam_component-producer&metric=code_smells)](https://sonarcloud.io/dashboard?id=asecurityteam_component-producer)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=asecurityteam_component-producer&metric=coverage)](https://sonarcloud.io/dashboard?id=asecurityteam_component-producer)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=asecurityteam_component-producer&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=asecurityteam_component-producer)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=asecurityteam_component-producer&metric=ncloc)](https://sonarcloud.io/dashboard?id=asecurityteam_component-producer)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=asecurityteam_component-producer&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=asecurityteam_component-producer)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=asecurityteam_component-producer&metric=alert_status)](https://sonarcloud.io/dashboard?id=asecurityteam_component-producer)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=asecurityteam_component-producer&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=asecurityteam_component-producer)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=asecurityteam_component-producer&metric=security_rating)](https://sonarcloud.io/dashboard?id=asecurityteam_component-producer)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=asecurityteam_component-producer&metric=sqale_index)](https://sonarcloud.io/dashboard?id=asecurityteam_component-producer)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=asecurityteam_component-producer&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=asecurityteam_component-producer)
+
 <!-- TOC -->
 
 - [component-producer - Settings component for publishing events to streams](#component-producer---settings-component-for-publishing-events-to-streams)
