@@ -6,7 +6,7 @@ SDCLI_VERSION=v1.5
 SDCLI=docker run --rm -v "$(DIR):$(DIR)" -w "$(DIR)"  asecurityteam/sdcli:$(SDCLI_VERSION)
 
 vendor:
-	$(SDCLI) go mod vendor
+	$(SDCLI) go dep
 
 dep: vendor
 
