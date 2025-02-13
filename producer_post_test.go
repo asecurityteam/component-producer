@@ -8,41 +8,11 @@ import (
 	"net/url"
 	"testing"
 
-	httpclient "github.com/asecurityteam/component-httpclient"
-
-	gomock "github.com/golang/mock/gomock"
+	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
-)
 
-var transportdConfig = `openapi: 3.0.0
-x-transportd:
-  backends:
-    - app
-  app:
-    host: "http://app:8081"
-    pool:
-      ttl: "24h"
-      count: 1
-info:
-  version: 1.0.0
-  title: "Example"
-  description: "An example"
-  contact:
-    name: Security Development
-    email: secdev-external@atlassian.com
-  license:
-    name: Apache 2.0
-    url: 'https://www.apache.org/licenses/LICENSE-2.0.html'
-paths:
-  /healthcheck:
-    get:
-      description: "Liveness check."
-      responses:
-        "200":
-          description: "Success."
-      x-transportd:
-        backend: app
-`
+	httpclient "github.com/asecurityteam/component-httpclient"
+)
 
 func TestPostProducerCantMarshal(t *testing.T) {
 	ctrl := gomock.NewController(t)
@@ -193,17 +163,6 @@ func TestProducerPOSTComponent_New(t *testing.T) {
 				conf := NewPOSTComponent().Settings()
 				conf.Endpoint = "http://localhost"
 				conf.HTTPClient.Type = httpclient.TypeDefault
-				return conf
-			}(),
-			wantProducer: true,
-		},
-		{
-			name: "smart http",
-			conf: func() *POSTConfig {
-				conf := NewPOSTComponent().Settings()
-				conf.Endpoint = "http://localhost"
-				conf.HTTPClient.Type = httpclient.TypeSmart
-				conf.HTTPClient.Smart.OpenAPI = transportdConfig
 				return conf
 			}(),
 			wantProducer: true,

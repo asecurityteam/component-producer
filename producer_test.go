@@ -4,8 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/asecurityteam/settings"
 	"github.com/stretchr/testify/require"
+
+	"github.com/asecurityteam/settings"
 )
 
 var benthosConfig = `http:
