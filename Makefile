@@ -1,35 +1,26 @@
 TAG := $(shell git rev-parse --short HEAD)
 DIR := $(shell pwd -L)
+.PHONY := dep lint test integration coverage
+# SDCLI
+SDCLI_VERSION=v1.5
+SDCLI=docker run --rm -v "$(DIR):$(DIR)" -w "$(DIR)"  asecurityteam/sdcli:$(SDCLI_VERSION)
 
-dep:
-	docker run -ti \
-        --mount src="$(DIR)",target="$(DIR)",type="bind" \
-        -w "$(DIR)" \
-        asecurityteam/sdcli:v1 go dep
+vendor:
+	$(SDCLI) go dep
 
-lint:
-	docker run -ti \
-        --mount src="$(DIR)",target="$(DIR)",type="bind" \
-        -w "$(DIR)" \
-        asecurityteam/sdcli:v1 go lint
+dep: vendor
+
+lint: dep
+	$(SDCLI) go lint
 
 test: dep
-	docker run -ti \
-        --mount src="$(DIR)",target="$(DIR)",type="bind" \
-        -w "$(DIR)" \
-        asecurityteam/sdcli:v1 go test
+	$(SDCLI) go test
 
-integration:
-	docker run -ti \
-        --mount src="$(DIR)",target="$(DIR)",type="bind" \
-        -w "$(DIR)" \
-        asecurityteam/sdcli:v1 go integration
+integration: dep
+	$(SDCLI) go integration
 
-coverage:
-	docker run -ti \
-        --mount src="$(DIR)",target="$(DIR)",type="bind" \
-        -w "$(DIR)" \
-        asecurityteam/sdcli:v1 go coverage
+coverage: dep
+	$(SDCLI) go coverage
 
 doc: ;
 
