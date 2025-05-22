@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/asecurityteam/settings"
+	"github.com/asecurityteam/settings/v2"
 )
 
 const (

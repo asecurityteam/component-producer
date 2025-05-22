@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/asecurityteam/settings"
+	"github.com/asecurityteam/settings/v2"
 )
 
 var benthosConfig = `http:
