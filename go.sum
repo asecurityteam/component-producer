@@ -1,7 +1,7 @@
 github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883 h1:bvNMNQO63//z+xNgfBlViaCIJKLlCJ6/fmUseuG0wVQ=
 github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883/go.mod h1:rCTlJbsFo29Kk6CurOXKm700vrz8f0KW0JNfpkRJY/8=
-github.com/asecurityteam/component-httpclient v0.6.1 h1:vFlUPvu3tVtbez2apdYd3hYNaUMUx89Z+fhmmbr0NTk=
-github.com/asecurityteam/component-httpclient v0.6.1/go.mod h1:i+Dr8JSyhVlhs4Se2WLlkiLXmLnhwujSPkJrbvYkss4=
+github.com/asecurityteam/component-httpclient v0.6.2 h1:ZspBYboGMW/Q5uOI+D9NurwAGLpELGfU7LCfi2GBTbA=
+github.com/asecurityteam/component-httpclient v0.6.2/go.mod h1:i+Dr8JSyhVlhs4Se2WLlkiLXmLnhwujSPkJrbvYkss4=
 github.com/asecurityteam/logevent/v2 v2.0.2 h1:dPPRNqnMgjvHTf/NxpvrgAjAPvA7AG/bF2FnCrDnoD0=
 github.com/asecurityteam/logevent/v2 v2.0.2/go.mod h1:cCjepcJdgAKoVfOTftnZ/Mp0WMsfwgaJ75UOjfKTxVU=
 github.com/asecurityteam/settings/v2 v2.0.3 h1:dYdghLR/4RvB6PRXZQAB3phz5yj5JMAz9uZ8Y4StxAA=

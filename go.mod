@@ -2,10 +2,10 @@ module github.com/asecurityteam/component-producer/v2
 
 go 1.22
 
-toolchain go1.24.3
+toolchain go1.24.4
 
 require (
-	github.com/asecurityteam/component-httpclient v0.6.1
+	github.com/asecurityteam/component-httpclient v0.6.2
 	github.com/asecurityteam/settings/v2 v2.0.3
 	github.com/golang/mock v1.6.0
 	github.com/stretchr/testify v1.10.0
@@ -29,4 +29,4 @@ require (
 replace github.com/uber/jaeger-lib v1.5.0+incompatible => github.com/uber/jaeger-lib v1.5.0
 
 // Force version due to a vulnerbility in the versions benthos currently uses
-replace github.com/nats-io/nats-server/v2 => github.com/nats-io/nats-server/v2 v2.11.3
+replace github.com/nats-io/nats-server/v2 => github.com/nats-io/nats-server/v2 v2.11.4
