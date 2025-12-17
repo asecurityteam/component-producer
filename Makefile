@@ -1,26 +1,44 @@
+.PHONY: docker-build-go docker-build-lint docker-build dep lint coverage test
+
 TAG := $(shell git rev-parse --short HEAD)
 DIR := $(shell pwd -L)
-.PHONY := dep lint test integration coverage
-# SDCLI
-SDCLI_VERSION=v1.5
-SDCLI=docker run --rm -v "$(DIR):$(DIR)" -w "$(DIR)"  asecurityteam/sdcli:$(SDCLI_VERSION)
+LOCAL_GO_IMAGE ?= component-producer-go
+LOCAL_LINT_IMAGE ?= component-producer-golangci-lint
+GODOCKER = docker run --rm -v "$(DIR):$(DIR)" -w "$(DIR)" $(LOCAL_GO_IMAGE)
+LINTDOCKER = docker run --rm -v "$(DIR):$(DIR)" -w "$(DIR)" $(LOCAL_LINT_IMAGE)
 
-vendor:
-	$(SDCLI) go dep
+COVERAGE_DIR := .coverage
+UNIT_COVERAGE_DIR := $(COVERAGE_DIR)/unit
+UNIT_COVERAGE_FILE := $(UNIT_COVERAGE_DIR)/unit.cover.out
+
+docker-build-go:
+	docker build --target go -t $(LOCAL_GO_IMAGE) .
+ 
+docker-build-lint:
+	docker build --target lint -t $(LOCAL_LINT_IMAGE) -f linter.Dockerfile .
+
+docker-build: docker-build-go docker-build-lint
+ 
+vendor: docker-build-go
+	$(GODOCKER) go mod vendor
 
 dep: vendor
 
-lint: dep
-	$(SDCLI) go lint
+lint: docker-build-lint dep
+	$(LINTDOCKER) golangci-lint run --config .golangci.yaml ./... -v
 
-test: dep
-	$(SDCLI) go test
+coverage-setup:
+	mkdir -p $(UNIT_COVERAGE_DIR)
+	touch $(UNIT_COVERAGE_FILE)
+
+test: coverage-setup docker-build-go dep
+	$(GODOCKER) go test -coverprofile=$(UNIT_COVERAGE_FILE) -v -race ./...
 
 integration: dep
-	$(SDCLI) go integration
-
-coverage: dep
-	$(SDCLI) go coverage
+	$(GODOCKER) go test -tags=integration -v ./...
+ 
+coverage: docker-build-go dep
+	$(GODOCKER) go tool cover -func=$(UNIT_COVERAGE_FILE)
 
 doc: ;
 

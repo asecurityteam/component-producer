@@ -5,7 +5,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"net/url"
 
@@ -23,7 +23,7 @@ func (p *postProducer) Produce(ctx context.Context, event interface{}) (interfac
 	if err != nil {
 		return nil, err
 	}
-	r, _ := http.NewRequest(http.MethodPost, p.Endpoint.String(), ioutil.NopCloser(bytes.NewReader(b)))
+	r, _ := http.NewRequest(http.MethodPost, p.Endpoint.String(), io.NopCloser(bytes.NewReader(b)))
 	res, err := p.Client.Do(r.WithContext(ctx))
 	if err != nil {
 		return nil, err
@@ -31,7 +31,7 @@ func (p *postProducer) Produce(ctx context.Context, event interface{}) (interfac
 	defer res.Body.Close()
 	// Drain the body no matter what in order to allow for connection re-use
 	// in HTTP/1.x systems.
-	rb, _ := ioutil.ReadAll(res.Body)
+	rb, _ := io.ReadAll(res.Body)
 	if res.StatusCode < 200 || res.StatusCode >= 300 {
 		return nil, fmt.Errorf("failed to post. status(%d) reason(%s)", res.StatusCode, string(rb))
 	}
